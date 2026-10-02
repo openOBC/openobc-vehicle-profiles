@@ -1,0 +1,44 @@
+{
+  "format": "openobc-vehicle-catalog@1",
+  "profiles": [
+    {
+      "id": "nissan-tiida-non-abs",
+      "profileId": 0,
+      "manufacturer": "nissan",
+      "model": "tiida",
+      "variant": "non_abs",
+      "displayName": "Nissan Tiida (Non-ABS)",
+      "description": "Nissan Tiida C11 without ABS brake system",
+      "minFw": "1.2.0",
+      "supportedFeatures": [
+        {"id": "speed", "name": "Speed"},
+        {"id": "rpm", "name": "RPM"},
+        {"id": "fuel_level", "name": "Fuel Level"},
+        {"id": "coolant_temp", "name": "Coolant Temperature"},
+        {"id": "battery_voltage", "name": "Battery Voltage"},
+        {"id": "obd_mode", "name": "OBD Mode"},
+        {"id": "trip_computer", "name": "Trip Computer"}
+      ]
+    },
+    {
+      "id": "nissan-tiida-abs",
+      "profileId": 1,
+      "manufacturer": "nissan",
+      "model": "tiida",
+      "variant": "abs",
+      "displayName": "Nissan Tiida (ABS)",
+      "description": "Nissan Tiida C11 with ABS brake system",
+      "minFw": "1.2.0",
+      "supportedFeatures": [
+        {"id": "speed", "name": "Speed"},
+        {"id": "rpm", "name": "RPM"},
+        {"id": "fuel_level", "name": "Fuel Level"},
+        {"id": "coolant_temp", "name": "Coolant Temperature"},
+        {"id": "battery_voltage", "name": "Battery Voltage"},
+        {"id": "obd_mode", "name": "OBD Mode"},
+        {"id": "abs_status", "name": "ABS Status"},
+        {"id": "trip_computer", "name": "Trip Computer"}
+      ]
+    }
+  ]
+}

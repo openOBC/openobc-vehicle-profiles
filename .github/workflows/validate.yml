@@ -1,0 +1,26 @@
+name: Validate catalog
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install jsonschema
+        run: pip install jsonschema
+
+      - name: Validate catalog.json against schema
+        run: >
+          python -c
+          "import json, jsonschema;
+          jsonschema.validate(json.load(open('catalog.json')),
+          json.load(open('schema/catalog.schema.json')));
+          print('catalog.json is valid')"
