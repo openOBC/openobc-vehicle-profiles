@@ -3,14 +3,14 @@
   "profiles": [
     {
       "id": "nissan-tiida-non-abs",
-      "image": "https://raw.githubusercontent.com/openOBC/openobc-vehicle-profiles/main/images/nissan-tiida-c11-nonabs.png",
       "profileId": 0,
       "manufacturer": "nissan",
       "model": "tiida",
       "variant": "non_abs",
       "displayName": "Nissan Tiida (Non-ABS)",
       "description": "Nissan Tiida C11 without ABS brake system",
-      "image": "https://raw.githubusercontent.com/openOBC/openobc-vehicle-profiles/main/images/nissan-tiida-c11.png",
+      "image": "https://raw.githubusercontent.com/openOBC/openobc-vehicle-profiles/main/images/nissan-tiida-c11-nonabs.png",
+      "imageDark": "https://raw.githubusercontent.com/openOBC/openobc-vehicle-profiles/main/images/nissan-tiida-c11-nonabs-dark.png",
       "minFw": "1.2.0",
       "supportedFeatures": [
         {"id": "speed", "name": "Speed"},
@@ -31,6 +31,7 @@
       "displayName": "Nissan Tiida (ABS)",
       "description": "Nissan Tiida C11 with ABS brake system",
       "image": "https://raw.githubusercontent.com/openOBC/openobc-vehicle-profiles/main/images/nissan-tiida-c11.png",
+      "imageDark": "https://raw.githubusercontent.com/openOBC/openobc-vehicle-profiles/main/images/nissan-tiida-c11-dark.png",
       "minFw": "1.2.0",
       "supportedFeatures": [
         {"id": "speed", "name": "Speed"},

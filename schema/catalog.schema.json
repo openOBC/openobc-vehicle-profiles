@@ -65,7 +65,12 @@
         "image": {
           "type": "string",
           "pattern": "^https://.+",
-          "description": "Vehicle illustration URL (transparent PNG over the app's tinted band). Optional: the app falls back to bundled theme-matched art for models it ships, and to a generic car icon when absent"
+          "description": "Vehicle illustration URL for light themes (transparent PNG over the app's tinted band). Optional: the app falls back to bundled theme-matched art for models it ships, and to a generic car icon when absent"
+        },
+        "imageDark": {
+          "type": "string",
+          "pattern": "^https://.+",
+          "description": "Vehicle illustration URL for dark themes (light-tinted strokes). Optional companion to `image`; clients fall back to `image` when absent"
         },
         "minFw": {
           "type": "string",
