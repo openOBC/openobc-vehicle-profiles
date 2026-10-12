@@ -3,6 +3,7 @@
   "profiles": [
     {
       "id": "nissan-tiida-non-abs",
+      "image": "https://raw.githubusercontent.com/openOBC/openobc-vehicle-profiles/main/images/nissan-tiida-c11-nonabs.png",
       "profileId": 0,
       "manufacturer": "nissan",
       "model": "tiida",
